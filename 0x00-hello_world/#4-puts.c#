@@ -4,6 +4,10 @@
 
 
 
+clear
+clear
+clear
+kill
 
 int main(void)
 {
