@@ -8,11 +8,18 @@
  */
 int main(void)
 {
-	int d;
+	int dec;
+	int rec;
 
-	for (d = '0'; d <= '9'; d++)
-		putchar(d);
-		putchar('\n');
+	dec = '0';
+	rec = '9';
+
+	while (dec <= rec)
+	{
+		putchar(dec);
+		dec++;
+	}
+	printf("\n");
 
 	return (0);
 }
