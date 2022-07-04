@@ -9,6 +9,7 @@
 int main(void)
 {
 	int dec;
+
 	dec = '0';
 
 	while (dec <= '9')
@@ -16,8 +17,7 @@ int main(void)
 		putchar(dec);
 		dec++;
 	}
-	
-	printf("\n");
+	putchar('\n');
 
 	return (0);
 }
