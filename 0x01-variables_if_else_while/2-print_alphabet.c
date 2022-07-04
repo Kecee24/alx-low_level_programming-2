@@ -8,16 +8,15 @@
  */
 int main(void)
 {
-  char l;
+char l;
 
-  l = 'a';
-
-  while (l <= 'z')
-    {
+l = 'a';
+ while (l <= 'z')
+   {
       putchar(l);
       l++;
     }
-  printf("\n");
+printf("\n");
   
-  return (0);
+return (0);
 }
