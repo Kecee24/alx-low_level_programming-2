@@ -9,16 +9,14 @@
 int main(void)
 {
 	int dec;
-	int rec;
-
 	dec = '0';
-	rec = '9';
 
-	while (dec <= rec)
+	while (dec <= '9')
 	{
 		putchar(dec);
 		dec++;
 	}
+	
 	printf("\n");
 
 	return (0);
