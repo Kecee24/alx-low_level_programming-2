@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+	char high;
+	char low;
+
+	high = 'A';
+	low = 'a';
+
+	while (low <= 'z')
+	{
+		putchar(low);
+		low++;
+	}
+
+	while (high <= 'Z')
+	{
+		putchar(high);
+		high++;
+	}
+	printf("\n");
+
+	return (0);
+}
