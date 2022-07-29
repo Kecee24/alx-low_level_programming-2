@@ -1,1 +1,1 @@
-My first programming projects in C 
+C has loops and its so cool
