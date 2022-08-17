@@ -69,5 +69,5 @@ Start to look for the right source of information without too much help
 
 ---
 
-## Author
-* **Derrick Gee** - [kai-dg](https://github.com/kai-dg)
+## By
+Saviour Michael
