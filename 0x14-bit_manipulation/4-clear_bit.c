@@ -1,21 +1,49 @@
 #include "main.h"
+
 /**
- * clear_bit - Entry Point
- * @n: input
- * @index: index
- * Return: 0
+ * _pow - calculates (base ^ power)
+ * @base: base of the exponent
+ * @power: power of the exponent
+ *
+ * Return: value of (base ^ power)
  */
-int clear_bit(unsigned long int *n, unsigned int index)
+unsigned long int _pow(unsigned int base, unsigned int power)
 {
-	unsigned long int bits;
+	unsigned long int num;
+	unsigned int i;
 
-	if (n == NULL)
-		return (-1);
+	num = 1;
+	for (i = 1; i <= power; i++)
+		num *= base;
+	return (num);
+}
 
-	bits = 1 << index;
+/**
+ * print_binary - prints a number in binary notation
+ * @n: number to print
+ *
+ * Return: void
+ */
+void print_binary(unsigned long int n)
+{
+	unsigned long int divisor, check;
+	char flag;
 
-	if ((bits | *n) == *n)
-		*n = *n ^ bits;
 
-	return (1);
+	flag = 0;
+	divisor = _pow(2, sizeof(unsigned long int) * 8 - 1);
+	while (divisor != 0)
+	{
+		check = n & divisor;
+		if (check == divisor)
+		{
+			flag = 1;
+			_putchar('1');
+		}
+		else if (flag == 1 || divisor == 1)
+		{
+			_putchar('0');
+		}
+		divisor >>= 1;
+	}
 }
