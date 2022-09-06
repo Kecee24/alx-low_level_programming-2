@@ -1,1 +1,1 @@
-C has loops and its so cool
+Simple Programs on C language
