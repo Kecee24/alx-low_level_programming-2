@@ -1,10 +1,22 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * _strspn - Entry point
  * @s: input
  * @accept: input
  * Return: Always 0 (Success)
  */
+
+int main(void)
+{
+    char *s = "hello, world";
+    char *f = "world";
+    unsigned int n;
+
+    n = _strspn(s, f);
+    printf("%u\n", n);
+    return (0);
+}
 
 unsigned int _strspn(char *s, char *accept)
 {
@@ -26,7 +38,7 @@ unsigned int _strspn(char *s, char *accept)
 		}
 
 		if (check == 0)
-			
+			return value;
 	}
 
 	return (value);
