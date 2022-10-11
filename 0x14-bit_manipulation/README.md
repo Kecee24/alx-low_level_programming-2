@@ -1,1 +1,1 @@
-Project on bit manipulation in C
+## 0x14. C - Bit manipulation

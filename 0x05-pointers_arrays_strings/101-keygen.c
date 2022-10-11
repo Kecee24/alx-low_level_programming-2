@@ -3,15 +3,14 @@
 #include <time.h>
 
 /**
- * main - program that generates random valid
- * passwords for the program 101-crackme
- *
+ * main - program that generates a random valid
+ * password for the program 101-crackme
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int pass[100];
 	int i, sum, n;
+	int pass[100];
 
 	sum = 0;
 
@@ -30,6 +29,5 @@ int main(void)
 			break;
 		}
 	}
-
 	return (0);
 }

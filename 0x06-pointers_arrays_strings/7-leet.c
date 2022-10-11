@@ -1,28 +1,28 @@
 #include "main.h"
 
 /**
- * leet - Entry point
- * ONE if, TWO loops only...
- * @n: input
- * Return: Always 0 (Success)
+ * leet - transform to leet
+ * @s: char array string type
+ * Return: s transformed
  */
-char *leet(char *n)
+char *leet(char *s)
 {
-	int i, x;
-	int find[] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
-	int replacer[] = {'4', '3', '0', '7', '1'};
+	int i, ii;
+	char s1[] = "aeotl";
+	char S1[] = "AEOTL";
+	char s2[] = "43071";
 
-	for (i = 0; n[i] != '\0'; i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		for (x = 0; x <= 9; x++)
+		for (ii = 0; ii < 5; ii++)
 		{
-			if (n[i] == find[x])
+			if (s[i] == s1[ii] || s[i] == S1[ii])
 			{
-				n[i] = replacer[x / 2];
-				x = 9;
+				s[i] = s2[ii];
+				break;
 			}
 		}
 	}
 
-	return (n);
+	return (s);
 }

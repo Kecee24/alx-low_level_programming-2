@@ -1,37 +1,37 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 /**
- * main - Prints numbers between 00 to 89.
- *
- * Return: Always 0 (Success)
+ * main - main block to be executed
+ * Description: write a program that prints all the combinations of two digits
+ * numbers to be seperated with ,, followed by a space
+ * Return: 0 Success
  */
 int main(void)
 {
-	int i, e;
+	int c;
+	int d = 0;
 
-	i = 48;
-	e = 48;
-
-	while (e < 58)
+	while (d < 10)
 	{
-		i = 48;
-		while (i < 58)
+		c = 0;
+
+		while (c < 10)
 		{
-			if (e != i && e < i)
+			if (d != c && d < c)
 			{
-				putchar(e);
-				putchar(i);
-				if (i == 57 && e == 56)
+				putchar('0' + d);
+				putchar('0' + c);
+				if (c + d != 17)
 				{
-					break;
+					putchar(',');
+					putchar(' ');
 				}
-				putchar(',');
-				putchar(' ');
 			}
-			i++;
+			c++;
 		}
-		e++;
+		d++;
 	}
 	putchar('\n');
+
 	return (0);
 }

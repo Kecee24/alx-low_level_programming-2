@@ -1,10 +1,10 @@
 #include "main.h"
-#include <stdlib.h>
 
 /**
- * free_grid - frees a 2 dimensional grid
- * @grid: the grid
- * @height: height of the grid
+ * free_grid - removing memory allocation
+ * @grid: memory block to be freed
+ * @height: height of the array
+ * Return: returns void
  */
 void free_grid(int **grid, int height)
 {
@@ -12,5 +12,6 @@ void free_grid(int **grid, int height)
 
 	for (i = 0; i < height; i++)
 		free(grid[i]);
+
 	free(grid);
 }

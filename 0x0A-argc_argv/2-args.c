@@ -1,19 +1,17 @@
 #include <stdio.h>
-#include "main.h"
+
 /**
- * main - Entry Point
- * @argc: arguments
- * @argv: array pointing to arguments
+ * main - prints all arguments it receives
+ * @argc: n args
+ * @argv: arr args
  * Return: 0
  */
 int main(int argc, char *argv[])
 {
-	int i = 0;
+	int i;
 
-	while (i < argc)
-	{
+	for (i = 0; i < argc; i++)
 		printf("%s\n", argv[i]);
-		i++;
-	}
+
 	return (0);
 }

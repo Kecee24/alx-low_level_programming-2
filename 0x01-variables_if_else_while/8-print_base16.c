@@ -1,30 +1,21 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
 /**
- * main - Entry point
- *
- * Return: Always 0 (SUCCESS)
+ * main - main block to be executed
+ * Description: printing base 10 digits
+ * Return: 0 Success
  */
 int main(void)
 {
-	int n, a;
-
-	n = 'a';
-	a = '0';
-
-	while (a <= '9')
-	{
-		putchar(a);
-		a++;
-	}
-
-	while (n <= 'f')
-	{
-		putchar(n);
-		n++;
-	}
-	putchar('\n');
-
-	return (0);
+char ch;
+for (ch = '0'; ch <= '9'; ch++)
+{
+	putchar(ch);
+}
+for (ch = 'a'; ch <= 'f'; ch++)
+{
+	putchar(ch);
+}
+putchar('\n');
+return (0);
 }
